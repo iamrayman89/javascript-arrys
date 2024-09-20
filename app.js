@@ -23,10 +23,22 @@ console.log(number);
 //     }
 // }
 
-const hobbies = ['Sport' , 'Cooking'];
-hobbies.push('Reading');
-hobbies.unshift('coding');
-const poppedValue = hobbies.pop();
-hobbies.shift();
-console.log(hobbies);
-console.log(poppedValue);
+// const hobbies = ['Sport' , 'Cooking'];
+// hobbies.push('Reading');
+// hobbies.unshift('coding');
+// const poppedValue = hobbies.pop();
+// hobbies.shift();
+// console.log(hobbies);
+// console.log(poppedValue);
+
+// hobbies.splice(0,0, 'Good food');
+
+// console.log(hobbies);
+
+const testResult =  [1,3,13,34,4,74];
+const newResult = testResult.slice();
+
+testResult.push(8.9);
+
+console.log(newResult, testResult);
+
