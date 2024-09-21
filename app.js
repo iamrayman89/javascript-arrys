@@ -35,10 +35,28 @@ console.log(number);
 
 // console.log(hobbies);
 
-const testResult =  [1,3,13,34,4,74];
-const newResult = testResult.slice();
+// const testResult =  [1,3,13,34,4,74];
+// const newResult = testResult.slice();
 
-testResult.push(8.9);
+// testResult.push(8.9);
 
-console.log(newResult, testResult);
+// console.log(newResult, testResult);
+
+
+
+const prices = [10.99,5.99,3.99,6.59];
+const tax = 0.19
+const taxAdjustedPrices = [];
+
+// for (const price of prices){
+//     taxAdjustedPrices.push(price * (1+tax));
+// }
+
+
+prices.forEach((price,idx,prices) => {
+    const priceObj = {index: idx, taxAdjPrices:price * (1+tax)}
+    taxAdjustedPrices.push(priceObj);
+});
+
+console.log(taxAdjustedPrices);
 
